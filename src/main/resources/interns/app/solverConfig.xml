@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+  <!--<environmentMode>FAST_ASSERT</environmentMode>-->
+  <solutionClass>interns.model.InternPlacements</solutionClass>
+  <entityClass>interns.model.Intern</entityClass>
+
+  <scoreDirectorFactory>
+    <scoreDrl>interns/app/scoreRules.drl</scoreDrl>
+  </scoreDirectorFactory>
+
+  <termination>
+    <secondsSpentLimit>5</secondsSpentLimit>
+  </termination>
+</solver>
