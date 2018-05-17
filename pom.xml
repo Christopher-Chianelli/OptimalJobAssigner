@@ -25,5 +25,18 @@
     </dependency>
     
   </dependencies>
-    
+  
+  <build>
+	  <plugins>
+		  <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <!-- WARNING: This configuration must be run with "mvn exec:java" not "mvn exec:exec". -->
+          <!-- It is impossible to write a configuration that is compatible with both exec:java and exec:exec -->
+          <configuration>
+		  <mainClass>interns.app.OptimalJobAssigner</mainClass>
+          </configuration>
+        </plugin>
+	  </plugins>
+  </build> 
 </project>
